@@ -1,0 +1,58 @@
+*{
+    font-family: cursive;
+    font-weight: 100;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    width: 120px;
+    height:120px;
+    display:block;
+    
+}
+.caja1{
+    background: orange;
+    
+}
+.caja2{
+    background: green;
+    position: relative;
+    top: 20px;
+    bottom: 30px;
+}
+.caja3{
+    background: lightblue;
+}
+.caja4{
+    background: yellow;
+}
+
+/* Hoy trabajaremos con la propiedad position que nos especifica la posicion del elemento y cambia el flujo del documento. Le damos al elemento 4 nuevas propiedades que son top, left, (estas dos últimas son las propiedades más importantes. Si estas estan definifas NO toma en cuenta las otras dos)right, botton. Las posibilidades de position
+Static: es por defecto, cuando esta colocado en estatic no esta posicionado 
+Relative:se cuenta dede donde termina el elemnteo anterior. Conserva el espacio aunque se mueva de lugar
+Absolute
+
+ También adquiere otra propiedad que es el z-index. Esto es que podemos imaginar los elementos en un eje z y el que tenga el valor más grande estará mas cerca de nosostros. Si al siguiente elemento le doy la position relative entonces ya por defecto me coloca la caja 3 por encima de la dos por que el flujo me dice que primero dibujo la caja dos y luego la tres. Por defecto el z-index viene con valor 0 también en las dos anteriores. Para cambiarlo se lo modifico manualmente . Una buena practica de programacion es colocar un buen tramo entre z-index y otro z-index, esto es si después quiero agregar otro elemento no estar modificando todos  los z-index manualmente. Mínimo se dejan 10 espacios
+ Ahora los z-index tiene un conflicto entre los padres e hijos.
+ Cuando yo tengo un contenedor padre y un contenedor hijo y quiero que el hijo quede por debajo del padre la unica forma es que el padre tenga la position relative NO definir el z-index y al hijo tambien definir la position relative y definir el z-index en -1. Solo asi no hay otra manera. Si defino un z-index menor en el hijo y uno mayor en el padre no les da bola.*/
+ .contenedor{
+    width: 300px;
+    height: 300px;
+    background: blue;
+    margin: 40px;
+    position: relative;
+
+ }
+ .hijo{
+    width: 120px;
+    height: 120px;
+    background: orangered;
+    position: relative;
+    top: -20px;
+    left: -20px;
+    z-index: -1;
+    
+ }
+

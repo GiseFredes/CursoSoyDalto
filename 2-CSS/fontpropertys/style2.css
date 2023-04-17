@@ -1,0 +1,13 @@
+h2{
+    display:inline-block;
+    background-color: brown;
+    padding: 100px;
+    box-sizing: content-box;
+    text-align: center;
+    margin: 20px 10px; /* Entre la primera y la segunda estructura hay mas distancia porque cuento el margin del primero más el segundo elemento */
+    border-radius: 25%;/* Esta propiedad rdondea los bordes..El maximo est 50% */
+   /* border: 10px groove gray; /*El border es una propiedad que incluye el ancho el stylo y el color Estilo de bordes solido dashed double groove*/
+    box-shadow: 4px 8px 5px 0px #000;
+    text-shadow: 2px 2px 7px #fff;
+    transform:rotate(30);
+}

@@ -1,0 +1,31 @@
+.contact-form{
+    font-size: 25px;
+}
+.contact-form__h2{
+    font-size: 2em;
+    font-family: 'Delicious Handrawn', cursive;
+    color: green;
+    /*line-height: 2; Por ahora no vemos
+    /*font-weight: 700; Tiene varios valores para determinar el grosor de la letra */
+    
+}
+
+/* Hay dos tipos de cajas. En bloque, que ocopa todo el espacio de contenedor que la contiene, e in-line que se ajusta al ancho del contenido. Para cambiar la propiedad se utiliza display que viene por defecto en la mayoria block y lo pasamos in line con esta ultima propiedad no le puedo dar height, o sea en con junto no funciona tampoco con el width
+Display: inline block para que pueda tomar propiedades de bloque*/
+#prueba{
+    display:inline-block;
+    /*height: 900px;
+    width: 190px;*/
+    background-color: brown;
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    /* padding-left: 30px; */
+    /* padding-right: 30px; */
+    /* padding: 20px 30px;  Aca defini primero top y button con los 20 px y luego left y right con los 30 px */
+    padding: 10px 20px 30px ; /*Aca defino el padding para cada uno de los lados, el primero es el top el segundo es right el tercero es botton y por último left.*/
+    height: 150px;
+    width: 200px;
+    /* Como yo defini el padding esto me lo descoloca porqu tambíen se suma al height y width Si yo quiero que si o si tenga 100 y 100 debo */
+    box-sizing: content-box;
+    text-align: center;
+}

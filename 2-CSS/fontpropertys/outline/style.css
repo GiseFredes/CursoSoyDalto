@@ -1,0 +1,16 @@
+.caja1{
+    width: 200px; 
+    height: 200px;
+    background-color: red;
+    margin: auto;
+    /* border: 10px solid blue ; */
+    box-sizing:content-box;
+    outline: 10px solid blueviolet;
+}
+.caja2{
+    width: 200px; 
+    height: 200px;
+    background-color: green;
+    margin: auto;
+    
+}

@@ -1,0 +1,19 @@
+/*Ahora veremos la posicion fixed que es igual que la absolute pero 
+queda definida en una posicion fija, donde nosotros la colocaremos. podemos scrolear 
+Pero nuestro elemento quedara siempre en el mismo lugar*/
+*{
+    font-family: cursive;
+    font-weight: 100;
+    font-size: 40px;
+}
+/*En este momento mi barra fixed tapa el text del principio y no lo alcanzo a leer. para corregir esto lo que hago es al body le voy a dar una paddin de 100pixeles para que baje y luego voy a darle a mi caja fixed un maargen negativo*/
+body{
+    padding-top: 100px;
+}
+.caja-fixed{
+    background: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: -10px;
+}

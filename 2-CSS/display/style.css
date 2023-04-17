@@ -1,0 +1,33 @@
+/*Display
+Propiedad que determina el comportamiento de las cajas, tiene muchas propiedades entre ellas:
+block: ocupa el ancho total
+inline: ocupa el ancho del contenido
+inline block: se define en un archivo de css el ancho y el alto. Podemos colocar un elemento al lado del otro con bloque esto no se puede hacer
+Table: se comporta como tabla*/
+
+*{
+    font-family: cursive;
+    font-weight: 100;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border: 10px solid red;
+    background: yellow; /*hasta aa el display es por defecto block*/
+    /*display: inline; con esta propiedad activa deja de tener efecto el width y height*/
+    display: inline-block;/*con la definicion de esta ultima propiedad si me acepta el ancho y el alto, ademas se colocan una  al lado de la otra*/
+
+}
+b{
+    margin: 20px;
+    border: 10px solid red;
+    background: yellow;  /*este por defecto tiene el display in line y no me modifica el ancho ni el alto, lo puedo pasar a block y las modifico pero me quedadn una abajo de la otra, si les doy la propiedad inline-block puedo definir ancho y alto y ademas me quedadn una al lado de la otra.*/
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+}

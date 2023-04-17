@@ -1,0 +1,42 @@
+/* Estructura básica de un achivo CSS
+selector{
+    propiedad:valor;
+}
+Selector= Elemento o conjunto de elementos que queremos cambiar
+cual es la PROPIEDAD del elemento que vamos a cambiar. Recordemos que en html todos son cajas, que puden ser de dos tipos. Que completan la línea (display in block) y que no completan la línea(display in line)
+*/
+/* Comenzamos- Tipos de selectores
+Selector Universal*/
+/* *{
+    color: red;
+} */
+/* Selector por tipo=  son los que seleccionamos por elemento, h1, button, p */
+button{ /* Cambio por cada elemento */
+    color: red;
+}
+/* Selector por clase= Coloco atributo class al elemento o elementos al que hacemos referencia en el documento html */
+.titulo-h2{
+    color: rebeccapurple;
+}
+/* Selector por ID . se lo nombran en el HTML se llaman con #. los identificadores se deben utilizar para un solo y unico elemento sino con java habra problemas*/
+#id-element{
+    color: green;
+}
+/* Selector por atributo=un atributo de un elemento lo colocó entre corchetes y su valor */
+[type="text"]{
+    color: aqua;
+}
+/* Selectores por descendientes */
+/* Para utilizar este selector se coloca al selector contenedor y luego el selector descendiente, el que la tiene más grande primero.
+Tambíen se puede hacer con clases. Sea que la etiqueta que lo contiene sea clase espacio y el selector que se encuentra dentro de la clase. */
+p span{
+    color: chocolate;
+}
+p span b{
+    color: crimson;
+}
+/* Selectores por pseudoclases:Las pseudoclases son eventos que se suceden como hover, active, etc. */
+h3:hover{
+    color: red
+    ;
+}

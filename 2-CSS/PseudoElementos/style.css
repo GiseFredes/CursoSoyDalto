@@ -1,0 +1,24 @@
+/*Un pseudo elemento es un elemento que no es un eelemnto como tal ya que no forma parte del DOM
+O sea, los Pseudo Elementos no forman partes del DOM, pero podemos ver cambios visuales como el outline!!
+los pseudoelementos se aplican a elementos, o sea se crean en base a un elemnto.
+Empecemos la primera es first line que  solo funciona en lo elementos en bloque. no en los in line*/
+*{
+    font-family: cursive;
+    font-weight: 100;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.texto{
+    margin: 20px;
+}
+.texto::first-line{/*Esto o que me hace es dar el etilo detallado abajo a la primera linea pero lo hace responsive-*/
+    color: blue;
+    font-size: 2em;
+}
+.texto::first-letter{
+    font-family: Impact;
+    color: brown;
+}
+/*Estos dos anteriores si forman parte del DOM pero pseudoElementos com before y after NO*/

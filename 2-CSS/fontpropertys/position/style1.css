@@ -1,0 +1,72 @@
+*{
+    font-family: cursive;
+    font-weight: 100;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+/* 
+div{
+    width: 120px;
+    height:120px;
+    display:block;
+    
+}
+.caja1{
+    background: orange;
+    
+}
+.caja2{
+    background: green;
+    position: absolute;
+}
+.caja3{
+    background: lightblue;
+}
+.caja4{
+    background: yellow;
+} */
+div{
+    display: block;
+    background: yellow;
+    position: absolute;
+}
+div div{
+    height: 75px;
+    width: 75px;
+    background: yellow;
+}
+.contenedor{
+    width: 450px;
+    height:450px;
+    border:4px solid red;
+    margin: 50px auto;
+    background: green;
+    position: relative;
+}
+.hijo1{
+   
+}
+.hijo2{
+    right: 0;
+}   
+.hijo3{
+    right: 0;
+    bottom: 0;
+}
+.hijo4{
+    bottom: 0;
+}
+.hijo5{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+ /* Ahora veremos la postion absolute. Esta tiene tres diferencias con position relative 
+ Aca explico tambien la opacidad, que en si es la transparencia. Y aca el rango es de 0 a 1 donde 0 es transparente y uno es completamente opaco. cerca de cero casi no se ve y cerca de uno se ve como siempre.
+ Continuando con la position absolute, vemos que cuando colocamos la position absolute en la caja dos, la caja tres desaparece. Esto es porque a diferencia de la position relative en la que aunque moviera las cajas de lugar quedaba guardado y no se ocupaba con nada.
+ En cambia aca este lugar no se guarda y por eso la caja 3 esta por debajo de la caja 2.
+ Aca la referencia  es el contenedor o el viewport. Si solo colocamos la posicion absolute esta estara definida por el contenedor. si en cambio definimos manualmente el top y left esto sera en relacion del viewport
+ La otra cosa es que con esta position absolute sino definimos el ancho y el alto del elemento esto se ajusta al contenido*/

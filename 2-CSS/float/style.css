@@ -1,0 +1,42 @@
+*{
+    font-family: cursive;
+    font-weight: 100;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    /*en la siguiente definicion utilizo el float... que es una propiedad utilizada anterior al grid y al flex para colocar dos o maas contnedores a la par. Esta forma era muy dificil de manejar por que es de dificil manejo aca queda a modo de ejemplo pero utilizaremos el grid o flex. Tambien vereremos un ejejmplo de imagen*/
+}
+.contenedor div{
+    width: 50%;
+    float: right;
+}
+.primario{
+    background: red;
+ }
+.secundario{
+    background: yellow;
+ }
+
+ .imagen{
+    margin: auto;
+    margin-top: 150px;
+    border: 4px solid red;
+    background: grey;
+    width: 50%;
+    padding: 20px;
+    
+}
+.imagen img{
+    float: left;
+    margin-right: 18px;
+}
+img{
+    width: 300px;
+}
+
+/*Y este es la única forma para lo que se recomienda actualmente ya que las otras son obsoleteas como se dijo anteriormente por grid y left.. Un hermoso efecto para poner imagen y texto y qqueda muy lindo.**/
+
+
+ 

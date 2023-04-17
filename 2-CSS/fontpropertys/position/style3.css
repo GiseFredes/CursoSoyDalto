@@ -1,0 +1,15 @@
+/*Por ultimo nos toca ver la propiedad sticky, que es una mescla entre relative y fixed. La diferencia es que conserva el lugar, no como en fixed en que tenia que mover el texto hacia abajo para que no quede oculto, y el texto comienza al final de esta cajita.*/
+
+
+*{
+    font-family: cursive;
+    font-weight: 100;
+    font-size: 40px;
+}
+.caja-fixed{
+    background: red;
+    position: sticky;
+    opacity: .3;
+    top: 0;
+}
+/*Se utiliza generalmente en la mitad del documento y a partir de ese momento se quedara fijo. No esta fijo cuando comienzo solo despues de pasar por el se defini su posicion*/

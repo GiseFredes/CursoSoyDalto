@@ -1,0 +1,27 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+/* Aca probamos las distintas unidades que se pueden usar. Estas son fijas, no se modifican. Como pt(puntos) cm(centimentros), ml(milimetros), picas y pulgadas. las medidas fijas no se adaptan a distintas pantallas */
+/* .contact-form__h2{
+    font-size: 10pt;
+} */
+/* Las medidas relativas son dos rem y em. Pero en este curso trabajamos con  em.  Un em es igual a 16 pixeles. */
+
+.contact-form{
+    font-size: 20px;
+    background-color: #000;
+    width: 50vw;
+    height: 100vh;
+}
+.contac-form__h2{
+    font-size: 5em;
+}
+/* Como hacer para definir el valor de em yo. Se hace cuando defino el fon size en el contenedor. El valor que yo le doy al font size del contenedor es igual a un em línea 7. Se hace por herencia la clase padre le hereda a su hijo.
+
+Tambien es valido para cualquier propiedad que trabaje con medidas, sea padding margin, etc.*/
+
+
+/* Ahora pasamos a otra medida el viewport... el viewport width(vw) y el viewport height(vh). lo de laa línea 1 lo hago para  quitar los valores que por defecto me trae el navegador. Tambíen se puede hacer por porcentajes. Pero estos porcentajes se calculan en relacion al tamaño de la caja. Esto lo veremos con la teoría de cajas*/
+/* trabajo en otra hoja de estilo para que no se mezcle las propiedades */

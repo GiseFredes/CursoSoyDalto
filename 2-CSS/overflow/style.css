@@ -1,0 +1,49 @@
+*{
+    font-family: cursive;
+    font-weight: 100;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+div{
+    margin: auto;
+    margin-top: 50px;
+    width: 320px;
+    height: 350px;
+    border: 4px solid red;
+    background: grey;
+    overflow: scroll;
+}
+/*La propiedad de overflow es lo que se desborda que hacemos con los elementos cuando el contenido es más grande que el contenedor.
+Hay varias propiedades la primera es visible. El desbordamiento no se recorta. Representa fuera de la caja del elemento. esto es por defecto
+hidden: solo me deja ver lo que cabe en la pantalla. Aca puedo definir el scroll yo
+Auto: me crea un scroll en caso de ser necesario para recorrer todo el contenido
+scroll: Me crea la barra de scroll aunque no sea nacesario, si no lo es queda inabilitada.
+Esta propiedad es un shortarm ya que reune a overflow-x y overflow-y*/
+body{
+    background: black;
+}
+.imagen{
+    margin: auto;
+    margin-top: 50px;
+    width: 320px;
+    height: 350px;
+    border: 4px solid red;
+    background: grey;
+    overflow: hidden;
+}
+img{
+    width: 320px;
+    position: relative;
+    top: 260px;
+    left: 240px;
+    outline: 2px solid blue;
+    transition: all 2s;
+}
+div:hover >img{
+    width: 320px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    outline: 2px solid blue;
+}

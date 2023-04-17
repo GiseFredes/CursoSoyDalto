@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="color-red" atrpropio="color-blue">Probamos la especificidad  </h1>
+    <!-- atrpropio es un atributo creado por mi y el valor es color-blue, seria el nombre por el cual lo puedo llamar desde css -->
+    <p class="parrafo-green" id="color-brown" style="color:darkmagenta;">Probamos otras cosas de especificidad en CSS. No quiero borrar por eso hago otra línea</p>
+    <!-- Aca por último pruebo el style en línea que le "gana" a los identificadores -->
+    <!-- Metodoligía BEM -->
+    <div class="contact-form" > Aqui contenedor
+        <input type="text" class="contact-form__input--pava"> <!-- Convencion para nombrar las clases. 1)Nombre del contenedor. 2)Dos guiones bajos y 3)El elemento al que hago referencia -->
+        <input type="text" class="contact-form__input">
+        <input type="text" class="contact-form__input">
+        <input type="text" class="contact-form__input">
+        <input type="text" class="contact-form__input">
+        <!-- Por convencion dos guiones bajos para los elementos y dos guiones altos para la especificacion de algun elemento  -->
+        <input type="password">
+    </div>
+</body>
+</html>

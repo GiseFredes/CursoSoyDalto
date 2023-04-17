@@ -1,0 +1,37 @@
+/* CSS es un lenguaje que va relizando tareas en cascada, según el orden en que aparescan. Pero cuando yo tengo dos referencias a la misma cosa entra en juego la especificidad. En el siguiente ejemplo lo puedo ver */
+.color-red{
+    color: red;
+}
+h1{
+    color: rebeccapurple;
+}
+/* En lo anterior primero le pido que lo escriba en rojo y luego en azul... Debería quedar azul. Pero la clase es más fuerte que el elemento */
+.color-red{
+    color: green;
+} 
+/* Aca de nuevo modifico por clases como son del mismo tipo vuelve a cambiar 
+*/
+[atrpropio="color-blue"]{
+    color: blue;
+}
+/* Los atributos creados por mi tienen el mismo rango de especificidad que las clases, Por ende, cambia de color(Significa que dos valores que tienen el mismo rango de especifidad vale el ultimo en leerse */
+
+#color-brown{
+    color: brown;
+}
+
+.parrafo-green{
+    color: green;
+}
+/* En el ejemplo anterior, primero esta el identificador y luego el estilo de clase. Por especificidad primero el identificado, la clase no la pisa porque tiene menor valor */
+/* Aca continue en el documento HTML, ya que alla definí el estilo en línea que le "gana" a los identificadores... Pero ahora regreso a esta página con el de mayor especificidad */
+
+p{
+    color:darkgoldenrod !important
+}
+/* Aunque utilizo la especificifidad mas baja con el important es el mayor valor */
+
+/* Metodología BEM: Nombrar las clases de tal forma que se pueda trabajar de forma sencilla y ordenada. Nos basamos en el nombre de la clase para saber a que elemento nos estamos refiriendo. Utilizando el mismo nombre se ejecutan por cascada*/
+.contact-form__input--pava{
+    color: red;
+}
