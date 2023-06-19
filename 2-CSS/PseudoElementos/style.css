@@ -14,11 +14,43 @@ Empecemos la primera es first line que  solo funciona en lo elementos en bloque.
     margin: 20px;
 }
 .texto::first-line{/*Esto o que me hace es dar el etilo detallado abajo a la primera linea pero lo hace responsive-*/
-    color: blue;
+    color: rgb(1, 1, 110);
     font-size: 2em;
+    text-decoration:wavy;
 }
 .texto::first-letter{
     font-family: Impact;
     color: brown;
 }
 /*Estos dos anteriores si forman parte del DOM pero pseudoElementos com before y after NO*/
+form{
+    margin: 100px auto;
+    display: block;
+    background-color: #555;
+    padding: 20px;
+    width: 50%;
+}
+
+input{
+    padding: 6px;
+    width: 100%;
+}
+input::placeholder{
+    color: red;
+    font-size: 1.4em;
+    background-color: yellow;
+}
+input::selection{
+    color:chocolate;
+    font-size: 2em;
+    background-color:aqua;
+}
+p::before{
+    content: "Mujer";
+    color: aquamarine;
+}
+p::after{
+    content: "Infeliz";
+    color: rebeccapurple;
+    background-color: #f16;
+}

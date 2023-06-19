@@ -1,0 +1,62 @@
+*{
+    font-family: 'Kalam', cursive;
+    font-weight: 100;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+/*
+.caja1{
+    height: 200px;
+    width: 200px;
+    background-color: lightskyblue;
+    transition: background 1.4s, height 1s, width 1s;
+    /* Otra forma de hacer lo anterior es hacer transition: all 1s. Pero más adelante sabremos porque esto no es una buena práctica de programación 
+}
+
+.caja1:hover{ 
+    /*Este estilo se define para cuando el mouse pasa encima del elemento
+    background-color: rgb(52, 161, 204);
+    height: 300px;
+    width: 300px;
+}
+/* Aqui veremos por encima la propiedad transition, que es la forma en que controlaremos la velocidad en que cambian los elementos. Tiene muchas más propiedades pero esas se veran más adelante. Se define en la propiedades de la clase 
+.caja2{
+    padding: 20px;
+    /*background: lightcoral;
+    margin-top: 50px;
+    color: #fff;
+   
+}
+a:link{
+    background: greenyellow;
+    color: red;
+    font-size: 20px;/*Esta propiedad define el estilo del link antes de usarlo
+}
+a:visited{
+    background: burlywood;
+    /*Esta propiedad define el estilo de un link despues de utilizarlo
+}
+La propiedad focus se utiliza en los input. Antes de empezar a rellenar tiene un estilo cuando lo selecciono cambia */
+/* .caja3 p:lang(en){
+    color: green;
+    background: cadetblue;
+} */
+.caja{
+    margin: 25px;
+    width: 300px;
+    height: 600px;
+}
+.caja img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    object-fit: cover;
+    object-position: right;
+
+}
+/*Trabajamos con la propiedad objet-fit: que tiene varios valores entre ellas CONTAIN:Las resoluciones de las imagenes se ajustan al contenido, luego teneemos COVER. Donde la imagen se adapta al contenido en largo y ancho...Toma en cuenta que con esta propiedad logre poner la carita con recuadro como era mi intencion en el practico de Argentina programa.
+Otra propiedad es NONE: Que en si hace como más le agrade para que las imagen quede.
+La última que queeda es scale-down busca entre las otras tres resoluciones la que tenga mas chica la resolucion con eso se queda.
+Objet-Fit se complementa con objet-position: que nos da la inclinacion de la imagen, tipo left se tira a la izquierda la imagen
+Tambien los podemos mover con cantidades con pixeles o con em o rem

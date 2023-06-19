@@ -10,9 +10,17 @@
 </head>
     <body>
         <div class="texto">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla rem odio nobis inventore! Quisquam modi doloremque asperiores aperiam vero ullam amet, dolore hic voluptatem nisi eveniet perferendis incidunt quis dolores. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores fugit harum reiciendis velit. Inventore odio aliquam, aperiam deserunt accusamus officia quia esse quis sed odit architecto aspernatur aut modi? Esse?
-            Culpa asperiores labore repudiandae magni, eaque inventore? Qui, eveniet nemo maiores eius aut ducimus itaque sunt. Explicabo facere dolore corrupti, nemo corporis velit ab, voluptatum nam consequatur fugit et asperiores.
-            Possimus explicabo voluptatem in ex quo repellat ratione libero, sunt esse consequuntur modi voluptas dolore, reprehenderit ea harum, ipsa recusandae quia obcaecati fugiat culpa! Facilis recusandae harum beatae possimus voluptatibus?
+            Un Pseudo Elemento no es un elemento porque no forma porte del DOM, pero si podemos ver cambios visuales se crean en base a un elemento. Aunque tenemos dos excepciones first-line y first-letter, los pseudo elementos que requieren la etiqueta content no forman parte del DOM. 
+            First- line funciona en elementos en bloque, afecta a la primera linea de texto.. Es responsive
+            first-letter funciona igual que el anterior pero sobre la primera letra.
+            Despues tenemos el placeholder que es el estilo del texto que aparece en un imput o textarea. 
+            Before y After tienen un particularidad son"hijos" del elemento. Necesitan la propiedad content y además solo se utilizan en elementos in-line
+            
         </div>
+        <form action="">
+            <input type="text" placeholder="Ingrese su nombre aquí:">
+        </form>
+
+        <p>Gisela</p>
     </body>
 </html>
